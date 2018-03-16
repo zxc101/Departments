@@ -1,14 +1,10 @@
 c:\users\al-pc\source\repos\Departments\Departments\bin\Debug\Departments.exe.config
 c:\users\al-pc\source\repos\Departments\Departments\bin\Debug\Departments.exe
 c:\users\al-pc\source\repos\Departments\Departments\bin\Debug\Departments.pdb
-c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\AddEmployee.g.cs
-c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\EditEmployee.g.cs
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\MainWindow.g.cs
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\App.g.cs
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments_MarkupCompile.cache
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments_MarkupCompile.lref
-c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\AddEmployee.baml
-c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\EditEmployee.baml
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\MainWindow.baml
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments.g.resources
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments.Properties.Resources.resources
@@ -17,3 +13,5 @@ c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments.csproj
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments.exe
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments.pdb
 c:\users\al-pc\source\repos\Departments\Departments\obj\Debug\Departments.csprojResolveAssemblyReference.cache
+C:\Users\AL-PC\source\repos\Departments\Departments\obj\Debug\AddEditEmployee.g.cs
+C:\Users\AL-PC\source\repos\Departments\Departments\obj\Debug\AddEditEmployee.baml

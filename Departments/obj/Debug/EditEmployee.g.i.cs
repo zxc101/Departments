@@ -41,23 +41,39 @@ namespace Departments {
     public partial class EditEmployee : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 36 "..\..\EditEmployee.xaml"
+        #line 40 "..\..\EditEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox departmentCB;
+        internal System.Windows.Controls.TextBox SurnameTB;
         
         #line default
         #line hidden
         
         
-        #line 46 "..\..\EditEmployee.xaml"
+        #line 49 "..\..\EditEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox employeeTB;
+        internal System.Windows.Controls.TextBox FNameTB;
         
         #line default
         #line hidden
         
         
-        #line 51 "..\..\EditEmployee.xaml"
+        #line 58 "..\..\EditEmployee.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox LNameTB;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 67 "..\..\EditEmployee.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ComboBox DepartmentCB;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 73 "..\..\EditEmployee.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button editBTN;
         
@@ -95,12 +111,18 @@ namespace Departments {
             switch (connectionId)
             {
             case 1:
-            this.departmentCB = ((System.Windows.Controls.ComboBox)(target));
+            this.SurnameTB = ((System.Windows.Controls.TextBox)(target));
             return;
             case 2:
-            this.employeeTB = ((System.Windows.Controls.TextBox)(target));
+            this.FNameTB = ((System.Windows.Controls.TextBox)(target));
             return;
             case 3:
+            this.LNameTB = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 4:
+            this.DepartmentCB = ((System.Windows.Controls.ComboBox)(target));
+            return;
+            case 5:
             this.editBTN = ((System.Windows.Controls.Button)(target));
             return;
             }

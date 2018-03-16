@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Departments
+namespace Departments.IViews
 {
-    class Company
+    interface MainWindowIView
     {
-        public string department { get; set; }
-        public string employee { get; set; }
+        int SelectedEmployee { get; }
     }
 }

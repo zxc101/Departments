@@ -26,8 +26,10 @@
         <ListView x:Name="employeesLV" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=department}" Header="Отдел" Width="242"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=employee}" Header="Сотрудник" Width="242"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Surname}" Header="Фамилия" Width="121"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=FName}" Header="Имя" Width="121"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=LName}" Header="Отчество" Width="121"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Department}" Header="Отдел" Width="121"/>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -13,50 +13,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Departments.Presenters;
+using Departments.IViews;
 
 namespace Departments
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, MainWindowIView
     {
+        public int SelectedEmployee {
+            get => employeesLV.SelectedIndex;
+        }
+
         public MainWindow()
         {
             InitializeComponent();
-            ObservableCollection<Company> company = new ObservableCollection<Company>();
-       
-            employeesLV.ItemsSource = company;
 
-            editBTN.Click += delegate
-            {
-                try
-                {
-                    int selectedIndex = employeesLV.SelectedIndex;
-                    if (selectedIndex == -1)
-                    {
-                        throw new LackOfInformationException();
-                    }
-                    EditEmployee editWin = new EditEmployee();
-                    editWin.departmentCB.SelectedItem = company[selectedIndex].department;
-                    editWin.employeeTB.Text = company[selectedIndex].employee;
-                    if (editWin.ShowDialog() == true)
-                    {
-                        company.RemoveAt(selectedIndex);
-                        company.Insert(selectedIndex, new Company { department = editWin.departmentCB.SelectedItem.ToString(), employee = editWin.employeeTB.Text });
-                    }
-                }
-                catch (LackOfInformationException)
-                {
-                    MessageBox.Show("Выберите сотрудника");
-                }
-            };
+            MainWindowPresenter presenter = new MainWindowPresenter(this);
 
-            addBTN.Click += delegate
-            {
-                AddEmployee addWin = new AddEmployee();
-                if (addWin.ShowDialog() == true)
-                {
-                    company.Add(new Company { department = addWin.departmentCB.SelectedItem.ToString(), employee = addWin.employeeTB.Text });
-                }
-            };
+            editBTN.Click += (s, e) => presenter.EditDepartment();
+            addBTN.Click += (s, e) => presenter.AddDepartment();
+
+            employeesLV.ItemsSource = presenter.GetCompany();
         }
     }
 }
